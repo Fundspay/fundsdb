@@ -1,0 +1,45 @@
+# Rust-specific ignores
+/target/             # Rust build directory
+**/*.rs.bk           # Rust backup files
+Cargo.lock           # Lockfile for dependencies
+Cargo.toml.lock      # Alternative lockfile
+**/*.rmeta           # Rust metadata files
+**/*.dSYM/           # Debugging symbols (macOS)
+**/debug/            # Debug build artifacts
+**/release/          # Release build artifacts
+
+# Rust IDE/editor specific files
+.idea/               # JetBrains IDE settings
+.vscode/             # VSCode settings
+/.rustup/            # Rust toolchain files
+/.cargo/             # Cargo configuration and registries
+
+# C++/C-specific ignores
+/build/              # Build output directory
+/bin/                # Compiled binaries
+/obj/                # Object files
+*.o                  # Object files
+*.so                 # Shared object files
+*.a                  # Static libraries
+*.dylib              # macOS dynamic libraries
+*.exe                # Windows executables
+*.dll                # Windows shared libraries
+*.lib                # Windows static libraries
+*.out                # Output binaries
+
+# C++/C IDE/editor specific files
+*.suo                # Visual Studio user options
+*.ncb                # Visual Studio Intellisense
+*.user               # Visual Studio user settings
+*.vcxproj.*          # Visual Studio temporary files
+CMakeCache.txt       # CMake cache files
+CMakeFiles/          # CMake temporary files
+compile_commands.json # CMake compile database
+
+# Common ignores
+*.log                # Log files
+*.tmp                # Temporary files
+*.swp                # Swap files (Vim)
+*.bak                # Backup files
+.DS_Store            # macOS system files
+Thumbs.db            # Windows thumbnail cache
